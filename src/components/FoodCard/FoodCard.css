@@ -6,4 +6,21 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
+    margin: 100px 50px;
+}
+.cart-container{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.376);
+}
+.cart-name{
+    font-size: 20px;
+}
+@media screen and (max-width:640px) {
+    .foods-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

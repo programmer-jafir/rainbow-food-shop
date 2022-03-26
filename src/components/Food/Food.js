@@ -2,7 +2,8 @@ import React from 'react';
 import './Food.css'
 
 const Food = (props) => {
-    const {name, img, price, ratings} = props.food;
+    const {handleAddToCart, food} = props;
+    const {name, img, price, ratings} = food;
     return (
         <div className='food'>
             <img src={img} alt="" />
@@ -12,7 +13,7 @@ const Food = (props) => {
             <p><small>Ratings: {ratings} stars</small></p>
 
             </div>
-            <button className='btn-cart'>
+            <button onClick={() => handleAddToCart(food)} className='btn-cart'>
                 <p>Add to Cart</p>
             </button>
         </div>
