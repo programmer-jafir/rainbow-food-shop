@@ -17,6 +17,9 @@ const FoodCard = () => {
         const newCart = [...cart,food];
         setCart(newCart);
     }
+    const ResetButton = () =>{
+        setCart([]);
+    }
 
     return (
         <div className='food-section'>
@@ -31,10 +34,15 @@ const FoodCard = () => {
             </div>
             <div className="cart-container">
                 <h5 className='cart-name'>Selected Foods</h5>
-                <div>
+                <div className='item-name'>
                 {cart.map((item)=>(
                     <h4 key={item.id}>{item.name}</h4>))
                 }
+                </div>
+                <div>
+                    <button className='btn btn-one'>CHOOSE 1 For Me</button>
+                    <br />
+                    <button onClick={ResetButton} className='btn btn-two'>CHOOSE AGAIN</button>
                 </div>
             </div>
         </div>

@@ -11,13 +11,29 @@
 .cart-container{
     width: 400px;
     height: 400px;
-    text-align: center;
     margin-top: 100px;
     border-radius: 10px;
     background-color: rgba(128, 128, 128, 0.376);
 }
 .cart-name{
     font-size: 20px;
+    margin-left: 20px;
+}
+.item-name{
+    margin-left: 40px;
+}
+.btn{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.btn-one{
+    color: green;
+}
+.btn-two{
+    color: purple;
 }
 @media screen and (max-width:640px) {
     .foods-container{
